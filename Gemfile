@@ -12,6 +12,10 @@ gem 'bootstrap-sass'
 gem 'bootsnap'
 gem 'puma', '~> 5.2'
 
+gem 'devise'
+gem 'cancancan'
+gem 'rolify'
+
 group :development, :test do
  gem 'pry-rails'
 end
