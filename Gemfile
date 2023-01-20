@@ -1,26 +1,28 @@
-source "https://rubygems.org"
-gem 'rails'
-gem 'pg', '~> 1.1'
-gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder'
-gem 'sdoc', group: :doc
-gem 'bootstrap-sass'
+source 'https://rubygems.org'
 gem 'bootsnap'
+gem 'bootstrap-sass'
+gem 'coffee-rails'
+gem 'jbuilder'
+gem 'jquery-rails'
+gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.2'
+gem 'rails'
+gem 'sass-rails'
+gem 'sdoc', group: :doc
+gem 'turbolinks'
+gem 'uglifier'
 
-gem 'devise'
 gem 'cancancan'
+gem 'devise'
 gem 'rolify'
 
 group :development, :test do
- gem 'pry-rails'
+  gem 'pry-rails'
 end
 
 group :development do
- gem 'web-console'
- gem 'spring'
+  gem 'spring'
+  gem 'web-console'
 end
+
+gem 'tailwindcss-rails', '~> 2.0'
