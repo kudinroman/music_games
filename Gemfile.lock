@@ -68,6 +68,10 @@ GEM
       tzinfo (~> 2.0)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bcrypt (3.1.18)
     bindex (0.8.1)
     bootsnap (1.15.0)
@@ -86,6 +90,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
+    connection_pool (2.3.0)
     crass (1.0.6)
     date (3.3.3)
     devise (4.8.1)
@@ -165,7 +170,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.4)
+    rails-html-sanitizer (1.5.0)
       loofah (~> 2.19, >= 2.19.1)
     railties (7.0.4.1)
       actionpack (= 7.0.4.1)
@@ -177,6 +182,12 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
+    react-rails (2.6.2)
+      babel-transpiler (>= 0.7.0)
+      connection_pool
+      execjs
+      railties (>= 3.2)
+      tilt
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -241,6 +252,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 5.2)
   rails
+  react-rails
   rolify
   sass-rails
   sdoc

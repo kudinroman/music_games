@@ -25,4 +25,5 @@ group :development do
   gem 'web-console'
 end
 
+gem 'react-rails'
 gem 'tailwindcss-rails', '~> 2.0'
