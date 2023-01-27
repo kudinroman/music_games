@@ -1,0 +1,42 @@
+  <nav class="">
+    <div class="">
+      <div class="">
+        <div class="">
+       <button type="button" class=""
+         <span class=""></span>
+         <span class=""></span>
+         <span class=""></span>
+       </button>
+       <a class="" href="/">Rails Tutorial</a>
+    </div>
+       <div id="navbar" class="">
+          <ul class="">
+            <li class="">
+              <a href="#" class="" data-toggle="dropdown" role="button">Products <span class=""></span></a>
+              <ul class="">
+                <li><%= link_to "List", products_path %></li>
+                <li><%= link_to "New", new_product_path %></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="">
+            <li class="">
+              <a href="#" class="" role="button">Profile <span class=""></span></a>
+              <ul class="">
+                <% if user_signed_in? %>
+                  <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+                <% else %>
+                  <li><%= link_to "Sign up", new_user_registration_path %></li>
+                  <li><%= link_to "Login", new_user_session_path %></li>
+                <% end %>
+                <% if user_signed_in? %>
+                  <li role="separator" class=""></li>
+                  <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                <% end %>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>

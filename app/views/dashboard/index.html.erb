@@ -1,8 +1,5 @@
 <%= flash_messages %>
 <div class="block">
-  <header class="header-group">
-    <%= react_component("Heading", {name: "Music games"}) %>
-  </header>
   <div class="row">
     <div class="col-md-12">
       <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
@@ -11,5 +8,13 @@
         <span x-text="count"></span>
       </div>
     </div>
+  </div>
+  <div>
+      <h1 class="btn-primary !text-red-200 my-class">
+        Hello world!
+      </h1>
+      <button class="btn-primary">
+        Click button
+      </button>
   </div>
 </div>
